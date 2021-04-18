@@ -1,0 +1,8 @@
+token: 6c0a5376-c9ad-4999-8c1b-b77fb99030d5
+resources:
+  cpu: 0.1
+  memory: 1G
+allowed_domains:
+  - bocklund.io
+allowed_users:
+  - richard.otis@outlook.com
