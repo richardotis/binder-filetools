@@ -1,6 +1,7 @@
-FROM python:3.7
+FROM python:3.8
 RUN pip3 install \
     jupyterhub \
+    notebook \
     jhsingle-native-proxy
 RUN curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 # create a user, since we don't want to run as root
