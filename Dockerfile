@@ -9,9 +9,8 @@ ENV HOME=/home/jovyan
 WORKDIR $HOME
 USER jovyan
 
+COPY --chown=jovyan:jovyan entrypoint.sh /tmp
+
 EXPOSE 8888
 
-WORKDIR /app
-COPY --chown=jovyan:jovyan entrypoint.sh /app
-
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/tmp/entrypoint.sh"]
