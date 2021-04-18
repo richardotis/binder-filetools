@@ -35,4 +35,4 @@ destport=$((port + 1))
 
 echo "Using internal port $destport"
 
-jhsingle-native-proxy --destport $destport --authtype none filebrowser {--}port {port} {--}root /projects {--}noauth {--}baseurl $JUPYTERHUB_SERVICE_PREFIX --port $port
+jhsingle-native-proxy --destport $destport filebrowser {--}port {port} {--}root /projects {--}noauth {--}baseurl $JUPYTERHUB_SERVICE_PREFIX --port $port
