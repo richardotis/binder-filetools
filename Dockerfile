@@ -10,7 +10,7 @@ WORKDIR $HOME
 USER jovyan
 
 COPY --chown=jovyan:jovyan entrypoint.sh /tmp
-
+RUN chmod 744 /tmp/entrypoint.sh
 EXPOSE 8888
 
 ENTRYPOINT ["/tmp/entrypoint.sh"]
